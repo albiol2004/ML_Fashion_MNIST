@@ -39,7 +39,7 @@ Sigue estos pasos para poner en marcha el proyecto en tu máquina local.
 #### 1. Clona el Repositorio
 ```bash
 git clone https://github.com/albiol2004/ML_Fashion_MNIST.git
-cd nombre-del-directorio
+cd ML_Fashion_MNIST
 ```
 
 #### 2. Crea un Entorno Virtual (Recomendado)
