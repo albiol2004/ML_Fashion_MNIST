@@ -1,6 +1,6 @@
 # 🤖 Clasificador de Moda con PyTorch (Fashion-MNIST)
 
-¡Hola! Este es un proyecto introductorio al mundo de la visión por computadora. El objetivo es entrenar una red neuronal sencilla con PyTorch para que aprenda a clasificar imágenes de ropa del famoso dataset **Fashion-MNIST**. Es el "Hola, Mundo" de la clasificación de imágenes, ¡pero con mucho más estilo!
+¡Hola! Este es un proyecto introductorio al mundo de la visión por computadora. El objetivo es entrenar una red neuronal sencilla con PyTorch para que aprenda a clasificar imágenes de ropa del famoso dataset **Fashion-MNIST**. Es el "Hola, Mundo" de la clasificación de imágenes.
 
 El modelo es capaz de mirar una imagen en blanco y negro de 28x28 píxeles de una prenda y decir si es una camiseta, un pantalón, un abrigo, etc.
 
@@ -25,14 +25,14 @@ El modelo es capaz de mirar una imagen en blanco y negro de 28x28 píxeles de un
 /
 ├── data/                 # Se crea automáticamente para descargar el dataset.
 ├── main.py               # Script principal para ENTRENAR el modelo.
-├── test_model.py         # Script para CARGAR y PROBAR el modelo ya entrenado.
+├── test.py         # Script para CARGAR y PROBAR el modelo ya entrenado.
 ├── model.pth             # El modelo entrenado (se genera al ejecutar main.py).
 └── README.md
 ```
 
 ---
 
-### 🚀 Cómo Empezar
+### 🚀 Ejecutar
 
 Sigue estos pasos para poner en marcha el proyecto en tu máquina local.
 
@@ -61,11 +61,11 @@ source ml_fashion_venv/bin/activate
 pip install torch torchvision matplotlib
 ```
 
-#### 4. ¡Ejecuta los Scripts!
+#### 4. Scripts
 
 **Paso 1: Entrenar el modelo**
 
-Ejecuta `main.py` para comenzar el proceso de entrenamiento. El script descargará el dataset, entrenará la red neuronal durante 10 épocas y guardará los pesos aprendidos en el archivo `fashion_mnist_model.pth`.
+Ejecuta `main.py` para comenzar el proceso de entrenamiento. El script descargará el dataset, entrenará la red neuronal durante 10 épocas y guardará los pesos aprendidos en el archivo `model.pth`.
 
 ```bash
 python main.py
@@ -74,10 +74,10 @@ Verás en la consola cómo la pérdida (loss) disminuye y la precisión (accurac
 
 **Paso 2: Probar el modelo**
 
-Una vez que tengas el archivo `fashion_mnist_model.pth`, puedes ejecutar `test_model.py` para ver tu modelo en acción. Este script cargará el modelo entrenado y lo usará para predecir un lote de imágenes del conjunto de prueba.
+Una vez que tengas el archivo `model.pth`, puedes ejecutar `test.py` para ver tu modelo en acción. Este script cargará el modelo entrenado y lo usará para predecir un lote de imágenes del conjunto de prueba.
 
 ```bash
-python test_model.py
+python test.py
 ```
 Aparecerá una ventana de Matplotlib mostrando las imágenes, la predicción del modelo y si fue un acierto (verde) o un error (rojo).
 
