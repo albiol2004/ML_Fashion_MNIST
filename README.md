@@ -38,7 +38,7 @@ Sigue estos pasos para poner en marcha el proyecto en tu máquina local.
 
 #### 1. Clona el Repositorio
 ```bash
-git clone https://URL_DE_TU_REPOSITORIO.git
+git clone https://github.com/albiol2004/ML_Fashion_MNIST.git
 cd nombre-del-directorio
 ```
 
